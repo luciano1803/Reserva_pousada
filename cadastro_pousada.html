@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cadastro de cliente</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+     <div class="container-fluid flex border-dark p-5 my-1">
+         <img src="./globo.png" class="w-100 rounded-top"/>
+      </div>
+    <div class="container bg-dark">
+      <div class="card card-register mx-auto col-6 px-0">
+        <div class="card-header bg-primary">
+          Cadastro da pousada Studio do Carmo
+        </div>
+        <div class="card-body">
+          <form action="cadastro_pousada.php" method="POST">
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col-8">
+                  <label for="Nome">Nome completo</label>
+                  <input
+                    type="text"
+                    name="nome"
+                    class="form-control"
+                    placeholder="Digite seu nome completo"
+                  />
+                </div>
+                <div class="col-6">
+                  <label for="cpf">CPF</label>
+                  <input
+                    type="text"
+                    name="cpf"
+                    class="form-control"
+                    placeholder="Digite CPF"
+                  />
+                </div>
+                <div class="col-6">
+                  <label for="agencia">agencia</label>
+                  <select name="agencia" class="form-control">
+                    <option value="">Selecione seu acesso</option>
+                    <option value="BO">Booking</option>
+                    <option value="DC">Decolar</option>
+                    <option value="EX">Expidea</option>
+                    <option value="OT">Outros</option>
+                  </select>
+                </div>
+                <div class="col-6">
+                  <label for="suite">Suite</label>
+                  <select name="suite" class="form-control">
+                    <option value="">Tipo de Suite</option>
+                    <option value="Quarto com Varanda">
+                      Quarto com Varanda
+                    </option>
+                    <option value="Quarto Econômico">Quarto Econômico</option>
+                    <option value="Suite Casal">Suite Casal</option>
+                    <option value="Suite Tripla">Suite Tripla</option>
+                    <option value="Suite Familia">Suite Familia</option>
+                  </select>
+                </div>
+                <div class="col-6">
+                  <label for="hospede">Nº Hospede</label>
+                  <input
+                    type="text"
+                    name="hospede"
+                    class="form-control"
+                    placeholder="Digite Nº hospede"
+                  />
+                </div>
+                <div class="col-6">
+                  <label for="check_in">Check-in</label>
+                  <input
+                    type="date"
+                    name="check_in"
+                    class="form-control"
+                    placeholder="Data do check-in" required
+                  />
+                </div>
+
+                <div class="col-6">
+                  <label for="check_out">Check-out</label>
+                  <input
+                    type="date"
+                    name="check_out"
+                    class="form-control"
+                    placeholder="Data do check_out" required
+                  />
+                </div>
+                
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-6">
+                  <label for="tipo">Tipo</label>
+                  <select name="tipo" class="form-control">
+                    <option value="">Tipo de status</option>
+                    <option value="Pendente">
+                      Pendente
+                    </option>
+                    <option value="Ok">Ok</option>
+                    <option value="Cancelado">Cancelado</option>
+                    <option value="Nao veio">Não Veio</option>
+                    
+                  </select>
+                </div>
+            <br>
+            <button class="btn btn-primary btn-block">Cadastrar</button>
+            <div class="text-center">
+              <a href="index.html" class="d-block mt-3">Página inicial</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <br>
+     
+      
+  
+    
+  </body>
+</html>
